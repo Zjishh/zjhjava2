@@ -10,7 +10,7 @@ import java.util.Objects;
  * @date 2023/5/24 20:40
  * @Description:   *
  ****************************/
-public class Student {
+public class Student implements Comparable<Student>{
     private String name;
 
     @Override
@@ -71,5 +71,15 @@ public class Student {
 
     public String toString() {
         return "Student{name = " + name + ", age = " + age + "}";
+    }
+
+
+    @Override
+    public int compareTo(Student o) {
+        int i = this.getAge() - o.getAge();
+        i = i==0?this.getName().compareTo(o.getName()):i;
+        return i;
+
+
     }
 }
