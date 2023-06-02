@@ -11,7 +11,7 @@ public class test2_kebiancanshu {
 
         System.out.println(add(3, 4, 5));
     }
-//96666626662356235962qwdqwd
+//96666626662356235962qwdqwd544
     private static int add(int... i) {
         int sun=0;
         for (int i1 = 0; i1 < i.length; i1++) {
